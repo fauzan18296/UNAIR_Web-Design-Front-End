@@ -1,52 +1,50 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import {Container, Row, Col} from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 const MenuComp = () => {
   const [image1, setImage1] = useState('')
-  const [image2, setImage2] = useState('')
-  const [image3, setImage3] = useState('')
-  const [image4, setImage4] = useState('')
-  const [image5, setImage5] = useState('')
-  const [image6, setImage6] = useState('')
+  const [error, setError] = useState(null)
 
   useEffect(() => {
-    axios.get('https://railway.app/project/0afdbf53-d991-4eba-b7bc-779e876b4e0b/service/0c929184-2295-49ab-b27d-a757fbadf1ed/image/1', {responseType: 'blob' })
-          .then(response => {
-        let imageUrl = URL.createObjectURL(response.data)
-        setImage1(imageUrl)
-          })
+    axios.get('https://unairweb-design-back-end-production.up.railway.app', { responseType: 'blob' })
+      .then(response => {
+        const contentType = response.headers['content-type','GET']
+        if (contentType.startsWith('image/')) {
+          const imageUrl = URL.createObjectURL(response.data)
+          console.log(imageUrl)
+          console.log(image1)
+          setImage1(imageUrl)
+        } else {
+          setError('Expected an image but received a different content type.')
+          console.error('Received content type:', contentType)
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching the image:', error)
+        setError('Failed to load image')
+      })
   }, [])
 
   return (
-      <div className='menu-kuliner'>
-        <Container className='d-flex justify-content-center align-items-center'>
-          <Row className='d-flex justify-content-center'>
-            <h2 className='mt-3'>Menu Food & Drink</h2>
-            <Col className='my-3'>
-              {image1 && (<>
+    <div className='menu-kuliner'>
+      <Container className='d-flex justify-content-center align-items-center'>
+        <Row className='d-flex justify-content-center'>
+          <h2 className='mt-3'>Menu Food & Drink</h2>
+          <Col className='my-3'>
+            {image1 ? (
+              <>
                 <img src={image1} alt='image1' />
                 <p className='fs-4 fw-semibold'>Matcha Pancake</p>
                 <button>Pesan Sekarang!</button>
-              </>)}
-            </Col>
-            <Col className='my-3'>
-              {image1 && (<>
-                <img src={image1} alt='image1' />
-                <p className='fs-4 fw-semibold'>Matcha Pancake</p>
-                <button>Pesan Sekarang!</button>
-              </>)}
-            </Col>
-            <Col className='my-3'>
-              {image1 && (<>
-                <img src={image1} alt='image1' />
-                <p className='fs-4 fw-semibold'>Matcha Pancake</p>
-                <button>Pesan Sekarang!</button>
-              </>)}
-            </Col>
-          </Row>
-        </Container>
-      </div>
+              </>
+            ) : (
+              error ? <p>{error}</p> : <p>Loading...</p>
+            )}
+          </Col>
+        </Row>
+      </Container>
+    </div>
   )
 }
 
