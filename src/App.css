@@ -75,3 +75,14 @@ span {
   border-radius: 10px;
   position: relative;
 }
+
+.menu-kuliner {
+  background-color: #fff;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.menu-kuliner img {
+  width: 50%;
+  border-radius: 10px;
+}
