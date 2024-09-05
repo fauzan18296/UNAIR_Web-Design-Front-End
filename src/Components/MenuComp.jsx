@@ -7,18 +7,10 @@ const MenuComp = () => {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    axios.get('https://unairweb-design-back-end-production.up.railway.app', { responseType: 'blob' })
+    axios.get('https://affectionate-perfection-production.up.railway.app/image/1', {responseType: 'blob'})
       .then(response => {
-        const contentType = response.headers['content-type','GET']
-        if (contentType.startsWith('image/')) {
-          const imageUrl = URL.createObjectURL(response.data)
-          console.log(imageUrl)
-          console.log(image1)
+        const imageUrl = URL.createObjectURL(response.data);
           setImage1(imageUrl)
-        } else {
-          setError('Expected an image but received a different content type.')
-          console.error('Received content type:', contentType)
-        }
       })
       .catch(error => {
         console.error('Error fetching the image:', error)
@@ -36,10 +28,34 @@ const MenuComp = () => {
               <>
                 <img src={image1} alt='image1' />
                 <p className='fs-4 fw-semibold'>Matcha Pancake</p>
-                <button>Pesan Sekarang!</button>
+                <button className='btn-menu p-1 fw-semibold'>Pesan Sekarang!</button>
               </>
             ) : (
-              error ? <p>{error}</p> : <p>Loading...</p>
+                error ? <p>{ error }</p>: <p>Loading...</p>
+            )}
+          </Col>
+
+          <Col className='my-3'>
+            {image1 ? (
+              <>
+                <img src={image1} alt='image1' />
+                <p className='fs-4 fw-semibold'>Matcha Pancake</p>
+                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
+              </>
+            ) : (
+                error ? <p>{ error }</p>: <p>Loading...</p>
+            )}
+          </Col>
+
+          <Col className='my-3'>
+            {image1 ? (
+              <>
+                <img src={image1} alt='image1' />
+                <p className='fs-4 fw-semibold'>Matcha Pancake</p>
+                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
+              </>
+            ) : (
+                error ? <p>{ error }</p>: <p>Loading...</p>
             )}
           </Col>
         </Row>
