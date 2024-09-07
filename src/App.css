@@ -86,10 +86,11 @@ span {
 
 .menu-kuliner p{
   font-size:  1.60rem;
+  padding-top: 0.4rem;
 }
 
 .menu-kuliner img {
-  width: 50%;
+  width: 80%;
   border-radius: 10px;
 }
 
@@ -101,6 +102,10 @@ span {
 
 @media screen and (max-width: 1366px) {
   html{
+    font-size: large;
+  }
+
+  .menu-kuliner p{
     font-size: large;
   }
 }
