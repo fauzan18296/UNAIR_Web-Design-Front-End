@@ -27,7 +27,7 @@ const MenuComp = () => {
             {image1 ? (
               <>
                 <img src={image1} alt='image1' />
-                <p className='fs-4 fw-semibold'>Matcha Pancake</p>
+                <p className='menu-name  fw-semibold'>Matcha Pancake</p>
                 <button className='btn-menu p-1 fw-semibold'>Pesan Sekarang!</button>
               </>
             ) : (
@@ -39,7 +39,7 @@ const MenuComp = () => {
             {image1 ? (
               <>
                 <img src={image1} alt='image1' />
-                <p className='fs-4 fw-semibold'>Matcha Pancake</p>
+                <p className='menu-name  fw-semibold'>Matcha Pancake</p>
                 <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
               </>
             ) : (
@@ -51,7 +51,7 @@ const MenuComp = () => {
             {image1 ? (
               <>
                 <img src={image1} alt='image1' />
-                <p className='fs-4 fw-semibold'>Matcha Pancake</p>
+                <p className='menu-name  fw-semibold'>Matcha Pancake</p>
                 <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
               </>
             ) : (

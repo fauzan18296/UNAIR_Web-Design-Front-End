@@ -84,6 +84,10 @@ span {
   width: 100%;
 }
 
+.menu-kuliner p{
+  font-size:  1.60rem;
+}
+
 .menu-kuliner img {
   width: 50%;
   border-radius: 10px;
@@ -93,4 +97,36 @@ span {
   background-color: rgb(255, 127, 80);
   box-shadow: 1px 1px 1px 1px rgba(2,2,2,.8);
   font-size: 16px;
+}
+
+@media screen and (max-width: 1366px) {
+  html{
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html{
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html{
+    font-size: small;
+  }
+  
+ .menu-kuliner .btn-menu {
+  font-size: x-small;
+  }
+
+
+  .menu-kuliner img {
+    width: 100px;
+  }
+
+  .menu-kuliner p{
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
 }
