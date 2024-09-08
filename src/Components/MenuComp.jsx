@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import React from 'react'
 
-const MenuComp = React.forwardRef(({ ref }) => {
+const MenuComp = React.forwardRef((props) => {
   const [image1, setImage1] = useState('')
   const [image2, setImage2] = useState('')
   const [image3, setImage3] = useState('')
@@ -144,7 +144,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
 
 
   return (
-    <div ref={ref} className='menu-kuliner' >
+    <div ref={props.ref} className='menu-kuliner' >
        <h2 className='text-center mt-3'>Menu Food & Drink</h2>
       <Container className='d-flex justify-content-center align-items-center'>
         <Row className='d-flex align-items-center  row-cols-lg-5 row-cols-md-3 row-cols-sm-2 mt-2 g-4'>
