@@ -149,7 +149,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
       <Container className='d-flex justify-content-center align-items-center'>
         <Row className='d-flex align-items-center  row-cols-lg-5 row-cols-md-3 row-cols-sm-2 mt-2 g-4'>
           {/* Memunculkan API gambar ke website */}
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image1 ? (
               <>
                 <img src={image1} alt='image1' />
@@ -161,7 +161,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image2 ? (
               <>
                 <img src={image2} alt='image2' />
@@ -173,7 +173,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image3 ? (
               <>
                 <img src={image3} alt='image3' />
@@ -185,7 +185,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image4 ? (
               <>
                 <img src={image4} alt='image4' />
@@ -197,7 +197,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image5 ? (
               <>
                 <img src={image5} alt='image5' />
@@ -209,7 +209,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image6 ? (
               <>
                 <img src={image6} alt='image6' />
@@ -221,7 +221,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image7 ? (
               <>
                 <img src={image7} alt='image7' />
@@ -233,7 +233,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image8 ? (
               <>
                 <img src={image8} alt='image8' />
@@ -245,7 +245,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image9 ? (
               <>
                 <img src={image9} alt='image9' />
@@ -257,7 +257,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image10 ? (
               <>
                 <img src={image10} alt='image10' />
@@ -269,7 +269,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image11 ? (
               <>
                 <img src={image11} alt='image11' />
@@ -281,7 +281,7 @@ const MenuComp = React.forwardRef(({ ref }) => {
             )}
           </Col>
 
-          <Col className='mt-3'>
+          <Col className='my-3'>
             {image12 ? (
               <>
                 <img src={image12} alt='image12' />
