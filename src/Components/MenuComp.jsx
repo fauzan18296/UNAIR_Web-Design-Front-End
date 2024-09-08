@@ -147,7 +147,7 @@ const MenuComp = React.forwardRef((props,ref) => {
     <div ref={ref} className='menu-kuliner' >
        <h2 className='text-center mt-3'>Menu Food & Drink</h2>
       <Container className='d-flex justify-content-center align-items-center'>
-        <Row className='d-flex align-items-center  row-cols-lg-5 row-cols-md-3 row-cols-sm-2 mt-2 g-4'>
+        <Row className='d-flex align-items-center  row-cols-lg-5 row-cols-md-4 row-cols-sm-2  g-4 my-2'>
           {/* Memunculkan API gambar ke website */}
           <Col className='my-3'>
             {image1 ? (
@@ -237,8 +237,8 @@ const MenuComp = React.forwardRef((props,ref) => {
             {image8 ? (
               <>
                 <img src={image8} alt='image8' />
-                <p className='menu-name  fw-semibold'>Manggo Chia Smootie</p>
-                <button className='mt-3 btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
+                <p className='menu-name  fw-semibold'>Manggo Smootie</p>
+                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
               </>
             ) : (
                 error ? <p>{ error }</p>: <p>Loading...</p>
