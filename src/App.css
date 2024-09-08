@@ -72,6 +72,7 @@ span {
 .hero-section .hero-btn{
   display: block;
   background: rgb(255, 127, 80);
+  cursor: pointer;
   height: 50px;
   border-radius: 10px;
   position: relative;
@@ -79,6 +80,10 @@ span {
 }
 
 .menu-kuliner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #fff;
   min-height: 100vh;
   width: 100%;
@@ -95,6 +100,7 @@ span {
 }
 
 .menu-kuliner .btn-menu {
+  display: inline-flex;
   background-color: rgb(255, 127, 80);
   box-shadow: 1px 1px 1px 1px rgba(2,2,2,.8);
   font-size: 16px;
@@ -114,24 +120,45 @@ span {
   html{
     font-size: medium;
   }
+
+.menu-kuliner p{
+    margin-top: 0.4rem;
+    font-size: 12px;
+  }
+
+  .menu-kuliner .btn-menu{
+  font-size: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
   html{
     font-size: small;
   }
+
+  .menu-kuliner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
   
  .menu-kuliner .btn-menu {
-  font-size: x-small;
+  font-size: 0.8rem;
   }
 
+  .menu-kuliner h2{
+    font-size: small;
+  }
 
   .menu-kuliner img {
     width: 100px;
   }
 
   .menu-kuliner p{
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
   }
 }
