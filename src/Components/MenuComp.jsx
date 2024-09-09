@@ -99,7 +99,7 @@ const MenuComp = React.forwardRef((props, ref) => {
     <div ref={ref} className='menu-kuliner' >
        <h2 className='text-center'>Menu Food </h2>
       <Container className='d-flex justify-content-center align-items-center'>
-        <Row className='d-flex align-items-center justify-content-center row-cols-lg-4 row-cols-md-3 row-cols-sm-2 my-2'>
+        <Row className='d-flex align-items-center justify-content-center row-cols-lg-4 row-cols-md-3 row-cols-sm-2 my-2 mx-4'>
           {/* Memunculkan dummy data gambar Food*/}
           {imagesFood.map((imgFood) => (
               <Col className='item-menu my-3 mx-3' key={imgFood.id}>
@@ -111,10 +111,11 @@ const MenuComp = React.forwardRef((props, ref) => {
           )}
         </Row>
       </Container>
+
       {/* Section Menu Minuman */}
        <h2 className='text-center'>Menu Drink</h2>
       <Container className='d-flex justify-content-center align-items-center'>
-        <Row className='d-flex align-items-center justify-content-center row-cols-lg-4 row-cols-md-3 row-cols-sm-2 my-2'>
+        <Row className='d-flex align-items-center justify-content-center row-cols-lg-4 row-cols-md-3 row-cols-sm-2 my-2 mx-4'>
           {/* Memunculkan dummy data gambar Drink*/}
           {imagesDrink.map((imgDrink) => (
               <Col className='item-menu my-3 mx-3' key={imgDrink.id}>
