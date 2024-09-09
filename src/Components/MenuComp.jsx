@@ -1,297 +1,129 @@
-import axios from 'axios'
-import { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import food1 from '../assets/IMG/images-menu/food1.jpeg'
+import food2 from '../assets/IMG/images-menu/food2.jpeg'
+import food3 from '../assets/IMG/images-menu/food3.jpeg'
+import food4 from '../assets/IMG/images-menu/food4.jpeg'
+import food5 from '../assets/IMG/images-menu/food5.jpeg'
+import food6 from '../assets/IMG/images-menu/food6.jpeg'
+import drink1 from '../assets/IMG/images-menu/drink1.jpeg'
+import drink2 from '../assets/IMG/images-menu/drink2.jpeg'
+import drink3 from '../assets/IMG/images-menu/drink3.jpeg'
+import drink4 from '../assets/IMG/images-menu/drink4.jpeg'
+import drink5 from '../assets/IMG/images-menu/drink5.jpeg'
+import drink6 from '../assets/IMG/images-menu/drink6.jpeg'
 import React from 'react'
 
-const MenuComp = React.forwardRef((props,ref) => {
-  const [image1, setImage1] = useState('')
-  const [image2, setImage2] = useState('')
-  const [image3, setImage3] = useState('')
-  const [image4, setImage4] = useState('')
-  const [image5, setImage5] = useState('')
-  const [image6, setImage6] = useState('')
-  const [image7, setImage7] = useState('')
-  const [image8, setImage8] = useState('')
-  const [image9, setImage9] = useState('')
-  const [image10, setImage10] = useState('')
-  const [image11, setImage11] = useState('')
-  const [image12, setImage12] = useState('')
-  const [error, setError] = useState(null)
+const MenuComp = React.forwardRef((props, ref) => {
+  // data dummy image makanan
+  const imagesFood = [
+    {
+      id: 1,
+      src: food1,
+      name: 'Matcha Pancake',
+      price: 'Rp.50000'
+    },
+    {
+      id: 2,
+      src: food2,
+      name: 'Muffin Cake',
+      price: 'Rp.50000'
+    },
+    {
+      id: 3,
+      src: food3,
+      name: 'Potato Balls',
+      price: 'Rp.50000'
+    },
+    {
+      id: 4,
+      src: food4,
+      name: ' Pink Macaroons ',
+      price: 'Rp.50000'
+    },
+    {
+      id: 5,
+      src: food5,
+      name: 'Roast Beef',
+      price: 'Rp.50000'
+    },
+    {
+      id: 6,
+      src: food6,
+      name: 'Sourdough Bread',
+      price: 'Rp.50000'
+    },
+  ]
 
-  // API Gambar Menu
-  useEffect(() => {
-     // 1. API gambar dengan pengambilan id 1
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/1', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage1(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 2. API gambar dengan pengambilan id 2
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/2', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage2(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 3. API gambar dengan pengambilan id 3
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/3', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage3(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 4. API gambar dengan pengambilan id 4
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/4', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage4(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 5. API gambar dengan pengambilan id 5
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/5', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage5(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 6. API gambar dengan pengambilan id 6
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/6', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage6(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 7. API gambar dengan pengambilan id 7
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/7', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage7(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 8. API gambar dengan pengambilan id 8
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/8', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage8(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 9. API gambar dengan pengambilan id 9
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/9', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage9(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 10. API gambar dengan pengambilan id 10
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/10', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage10(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 11. API gambar dengan pengambilan id 11
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/11', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage11(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-      // 12. API gambar dengan pengambilan id 12
-    axios.get('https://affectionate-perfection-production.up.railway.app/image/12', {responseType: 'blob'})
-      .then(response => {
-        const imageUrl = URL.createObjectURL(response.data);
-          setImage12(imageUrl)
-      })
-      .catch(error => {
-        console.error('Error fetching the image:', error)
-        setError('Failed to load image')
-      })
-  }, [])
-
+  // data dummy image minuman
+  const imagesDrink = [
+    {
+      id: 1,
+      src: drink1,
+      name: 'Kiwi Mojito',
+      price: 'Rp.50000'
+    },
+    {
+      id: 2,
+      src: drink2,
+      name: 'Apple Coctail',
+      price: 'Rp.50000'
+    },
+    {
+      id: 3,
+      src: drink3,
+      name: 'Orange Juice',
+      price: 'Rp.50000'
+    },
+    {
+      id: 4,
+      src: drink4,
+      name: 'Red Cocktail',
+      price: 'Rp.50000'
+    },
+    {
+      id: 5,
+      src: drink5,
+      name: 'Lemon Tea',
+      price: 'Rp.50000'
+    },
+    {
+      id: 6,
+      src: drink6,
+      name: 'Spear Mint',
+      price: 'Rp.50000'
+    },
+  ]
 
   return (
+    // Section Menu Makanan
     <div ref={ref} className='menu-kuliner' >
-       <h2 className='text-center mt-3'>Menu Food & Drink</h2>
+       <h2 className='text-center'>Menu Food </h2>
       <Container className='d-flex justify-content-center align-items-center'>
-        <Row className='d-flex align-items-center  row-cols-lg-5 row-cols-md-4 row-cols-sm-2  g-4 my-2'>
-          {/* Memunculkan API gambar ke website */}
-          <Col className='my-3'>
-            {image1 ? (
-              <>
-                <img src={image1} alt='image1' />
-                <p className='menu-name  fw-semibold'>Matcha Pancake</p>
-                <button className='btn-menu p-1 fw-semibold'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image2 ? (
-              <>
-                <img src={image2} alt='image2' />
-                <p className='menu-name  fw-semibold'>Muffin Cake</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image3 ? (
-              <>
-                <img src={image3} alt='image3' />
-                <p className='menu-name  fw-semibold'>Potato Balls</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image4 ? (
-              <>
-                <img src={image4} alt='image4' />
-                <p className='menu-name  fw-semibold'>Pink Macaroons</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image5 ? (
-              <>
-                <img src={image5} alt='image5' />
-                <p className='menu-name  fw-semibold'>Roast Beef</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image6 ? (
-              <>
-                <img src={image6} alt='image6' />
-                <p className='menu-name  fw-semibold'>Sourdough Bread</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image7 ? (
-              <>
-                <img src={image7} alt='image7' />
-                <p className='menu-name  fw-semibold'>Kiwi Mojito</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image8 ? (
-              <>
-                <img src={image8} alt='image8' />
-                <p className='menu-name  fw-semibold'>Manggo Smootie</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image9 ? (
-              <>
-                <img src={image9} alt='image9' />
-                <p className='menu-name  fw-semibold'>Orange juice</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image10 ? (
-              <>
-                <img src={image10} alt='image10' />
-                <p className='menu-name  fw-semibold'>Red Cocktail</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image11 ? (
-              <>
-                <img src={image11} alt='image11' />
-                <p className='menu-name  fw-semibold'>Lemon Tea</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
-
-          <Col className='my-3'>
-            {image12 ? (
-              <>
-                <img src={image12} alt='image12' />
-                <p className='menu-name  fw-semibold'>Spear Mint</p>
-                <button className='btn-menu fw-semibold p-1'>Pesan Sekarang!</button>
-              </>
-            ) : (
-                error ? <p>{ error }</p>: <p>Loading...</p>
-            )}
-          </Col>
+        <Row className='d-flex align-items-center justify-content-center row-cols-lg-4 row-cols-md-3 row-cols-sm-2 my-2'>
+          {/* Memunculkan dummy data gambar Food*/}
+          {imagesFood.map((imgFood) => (
+              <Col className='item-menu my-3 mx-3' key={imgFood.id}>
+                   <img src={imgFood.src} alt={`image${imgFood.id}`} />
+                <p className='menu-name  fw-semibold'>{imgFood.name}</p>
+                <button className='btn-menu p-1 fw-semibold'>{imgFood.price}</button>
+            </Col>
+        )  
+          )}
+        </Row>
+      </Container>
+      {/* Section Menu Minuman */}
+       <h2 className='text-center'>Menu Drink</h2>
+      <Container className='d-flex justify-content-center align-items-center'>
+        <Row className='d-flex align-items-center justify-content-center row-cols-lg-4 row-cols-md-3 row-cols-sm-2 my-2'>
+          {/* Memunculkan dummy data gambar Drink*/}
+          {imagesDrink.map((imgDrink) => (
+              <Col className='item-menu my-3 mx-3' key={imgDrink.id}>
+                   <img src={imgDrink.src} alt={`image${imgDrink.id}`} />
+                <p className='menu-name fw-semibold'>{imgDrink.name}</p>
+                <button className='btn-menu p-1 fw-semibold'>{imgDrink.price}</button>
+            </Col>
+        )  
+          )}
         </Row>
       </Container>
     </div>
