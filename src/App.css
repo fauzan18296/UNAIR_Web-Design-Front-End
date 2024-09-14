@@ -1,28 +1,30 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* Clearing CSS */
-*, html, body {
+*,
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #fff;
   width: 100%;
   min-height: 100vh;
 }
 
 :root {
-  --font-family-main:'Roboto';
+  --font-family-main: "Roboto";
 }
 
 .glass-navbar {
-  background-color: rgba(255, 255, 255, 0.1); 
-  backdrop-filter: blur(10px); 
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1); 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .navbar-nav {
@@ -33,15 +35,15 @@ body{
 }
 
 span {
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
   font-weight: 400;
-  color:rgb(255, 127, 80);
+  color: rgb(255, 127, 80);
 }
 
 .hero-section {
-  background-image: url('./assets/IMG/Background/4.jpg');
+  background-image: url("./assets/IMG/Background/4.jpg");
   background-size: cover;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
   height: 100vh;
@@ -49,19 +51,23 @@ span {
 }
 
 .hero-section::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   position: absolute;
   height: 13rem;
   bottom: 0;
-  background: linear-gradient(0deg,rgba(2,2,2,.7) 20%, rgba(255,255,255, 0) 100% );
+  background: linear-gradient(
+    0deg,
+    rgba(2, 2, 2, 0.7) 20%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
-.hero-text{
+.hero-text {
   display: inline-block;
   padding: 0.2rem 0;
-  text-shadow: 1px 1px 1px rgba(2,2,2,.5);
+  text-shadow: 1px 1px 1px rgba(2, 2, 2, 0.5);
 }
 
 .hero-section .kuliner-text {
@@ -69,14 +75,14 @@ span {
   font-weight: 700;
 }
 
-.hero-section .hero-btn{
+.hero-section .hero-btn {
   display: block;
   background: rgb(255, 127, 80);
   cursor: pointer;
   height: 50px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 2px 2px .1px .1px rgba(2,2,2,.7);
+  box-shadow: 2px 2px 0.1px 0.1px rgba(2, 2, 2, 0.7);
 }
 
 .menu-kuliner {
@@ -118,31 +124,31 @@ span {
 }
 
 @media screen and (max-width: 1366px) {
-  html{
+  html {
     font-size: large;
   }
 
-  .menu-kuliner p{
+  .menu-kuliner p {
     font-size: large;
   }
 }
 
 @media screen and (max-width: 768px) {
-  html{
+  html {
     font-size: medium;
   }
 
-.menu-kuliner p{
+  .menu-kuliner p {
     font-size: 12px;
   }
 
-  .menu-kuliner .btn-menu{
-  font-size: 0.6rem;
+  .menu-kuliner .btn-menu {
+    font-size: 0.6rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  html{
+  html {
     font-size: small;
   }
 
@@ -155,12 +161,11 @@ span {
     min-height: 100%;
   }
 
-  
- .menu-kuliner .btn-menu {
-  font-size: 1.1rem;
+  .menu-kuliner .btn-menu {
+    font-size: 1.1rem;
   }
 
-  .menu-kuliner h2{
+  .menu-kuliner h2 {
     font-size: 1.4em;
     margin: 0 1rem;
   }
@@ -169,7 +174,7 @@ span {
     width: 120px;
   }
 
-  .menu-kuliner p{
+  .menu-kuliner p {
     margin-top: 0.4rem;
     font-size: 1em;
   }

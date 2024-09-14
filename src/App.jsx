@@ -4,7 +4,6 @@ import Home from './Pages/Home/HomePage'
 import About from './Pages/About/AboutPage'
 import Categories from './Pages/Categories/CategoriesPage'
 
-
 const App = () => {
   return (
     <>
