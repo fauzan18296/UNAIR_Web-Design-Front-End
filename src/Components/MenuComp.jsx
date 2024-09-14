@@ -22,7 +22,46 @@ const MenuComp = React.forwardRef((props, ref) => {
       duration: 2000,
       delay: 40
     })
-      });
+    });
+  // data dummy image makanan
+  const imagesFood = [
+   {
+      id: 1,
+      src: food1,
+      name: "Matcha Pancake",
+      price: "Rp 35.000",
+    },
+    {
+      id: 2,
+      src: food2,
+      name: "Muffin Cake",
+      price: "Rp 16.000",
+    },
+    {
+      id: 3,
+      src: food3,
+      name: "Potato Balls",
+      price: "Rp 15.000",
+    },
+    {
+      id: 4,
+      src: food4,
+      name: " Pink Macaroons ",
+      price: "Rp 18.000",
+    },
+    {
+      id: 5,
+      src: food5,
+      name: "Roast Beef",
+      price: "Rp 55.000",
+    },
+    {
+      id: 6,
+      src: food6,
+      name: "Sourdough Bread",
+      price: "Rp 25.000",
+    },
+  ];
 
     // data dummy image makanan
     const imagesFood = [
@@ -157,5 +196,6 @@ const MenuComp = React.forwardRef((props, ref) => {
           </div>
         </div>
       </>
-  )})
-export default MenuComp
+  );
+})
+export default MenuComp;
