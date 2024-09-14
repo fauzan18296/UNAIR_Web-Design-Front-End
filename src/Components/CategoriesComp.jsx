@@ -9,4 +9,3 @@ const CategoriesComp = () => {
   </Container>
 }
 export default CategoriesComp
-
