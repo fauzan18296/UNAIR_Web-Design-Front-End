@@ -157,6 +157,5 @@ const MenuComp = React.forwardRef((props, ref) => {
           </div>
         </div>
       </>
-    );
-})
+    )})
 export default MenuComp
