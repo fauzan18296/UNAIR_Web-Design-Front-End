@@ -16,7 +16,7 @@ import React from "react";
 const MenuComp = React.forwardRef((props, ref) => {
   // data dummy image makanan
   const imagesFood = [
-    {
+   {
       id: 1,
       src: food1,
       name: "Matcha Pancake",
