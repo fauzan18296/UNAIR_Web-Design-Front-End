@@ -89,9 +89,16 @@ span {
   width: 100%;
 }
 
-.menu-kuliner p{
-  font-size:  1.60rem;
+.menu-kuliner h2 {
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.menu-kuliner p {
+  font-size: 1.6rem;
   padding-top: 0.4rem;
+  display: flex;
+  margin: 0 auto;
 }
 
 .menu-kuliner img {
@@ -100,9 +107,13 @@ span {
 }
 
 .menu-kuliner .btn-menu {
-  display: inline-flex;
-  background-color: rgb(255, 127, 80);
-  box-shadow: 1px 1px 1px 1px rgba(2,2,2,.8);
+  display: flex;
+  /* background-color: rgb(255, 127, 80);
+  box-shadow: 1px 1px 1px 1px rgba(2,2,2,.8); */
+  background: none;
+  /* color: rgba(1, 1, 1, 0.5); */
+  color: rgba(255, 127, 80);
+  border: none;
   font-size: 16px;
 }
 

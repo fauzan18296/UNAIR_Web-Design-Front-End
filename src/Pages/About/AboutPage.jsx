@@ -4,7 +4,8 @@ import AboutComp from "../../Components/AboutComp"
 const About = () => {
   return (
     <>
-    <NavbarComp />
+      <NavbarComp />
+      <AboutComp/>
     </>
   )
 }
