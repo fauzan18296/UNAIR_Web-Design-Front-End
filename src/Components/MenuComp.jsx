@@ -11,9 +11,15 @@ import drink3 from "../assets/IMG/images-menu/drink3.jpeg";
 import drink4 from "../assets/IMG/images-menu/drink4.jpeg";
 import drink5 from "../assets/IMG/images-menu/drink5.jpeg";
 import drink6 from "../assets/IMG/images-menu/drink6.jpeg";
+import { useEffect } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 import React from "react";
 
 const MenuComp = React.forwardRef((props, ref) => {
+  useEffect(() => {
+    Aos.init()
+  })
   // data dummy image makanan
   const imagesFood = [
    {
