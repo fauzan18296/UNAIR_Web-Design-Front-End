@@ -18,8 +18,11 @@ import React from "react";
 
 const MenuComp = React.forwardRef((props, ref) => {
   useEffect(() => {
-    Aos.init()
-  })
+    Aos.init({
+      duration: 2000,
+      delay: 40
+    })
+
   // data dummy image makanan
   const imagesFood = [
    {
