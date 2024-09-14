@@ -22,8 +22,6 @@ const MenuComp = React.forwardRef((props, ref) => {
       duration: 2000,
       delay: 40
     })
-  })
-
   // data dummy image makanan
   const imagesFood = [
    {
