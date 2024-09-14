@@ -9,4 +9,8 @@ const Categories = () => {
     </>
   )
 }
+<<<<<<< HEAD
 export default  Categories
+=======
+export default Categories
+>>>>>>> staging
