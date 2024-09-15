@@ -20,7 +20,7 @@ const MenuComp = React.forwardRef((props, ref) => {
   useEffect(() => {
     Aos.init({
       duration: 2000,
-      delay: 40
+      delay: 20
     })
     });
 
@@ -113,7 +113,6 @@ const MenuComp = React.forwardRef((props, ref) => {
         </h2>
         <div data-aos='fade-right'
           data-aos-easing="ease-in-out-back"
-          transition-duration='2000ms'
         >
       <Container className="menu-container d-flex justify-content-center align-items-center">
         <Row className="d-flex align-items-center justify-content-center row-cols-lg-3 row-cols-md-3 row-cols-sm-1 row-cols-2 my-2 mx-auto">
@@ -138,8 +137,7 @@ const MenuComp = React.forwardRef((props, ref) => {
         Menu <span>Drink</span>
         </h2>
         <div  data-aos='fade-left'
-          data-aos-easing="ease-in-out-back"
-          transition-duration='2000ms'>
+          data-aos-easing="ease-in-out-back">
       <Container className="menu-container d-flex justify-content-center align-items-center">
         <Row className="d-flex align-items-center justify-content-center row-cols-lg-3 row-cols-md-3 row-cols-sm-1 row-cols-2 my-2 mx-auto">
           {/* Memunculkan dummy data gambar Drink*/}
