@@ -129,13 +129,22 @@ body {
 }
 
 .about-page img {
+<<<<<<< HEAD
   width: 40rem;
   margin-bottom: 2rem;
   border-radius: 10px;
+=======
+  width: 48%;
+  border-radius: 10%;
+>>>>>>> staging
 }
 
 .about-page h2 {
   letter-spacing: 3px;
+<<<<<<< HEAD
+=======
+  margin-top: 2rem;
+>>>>>>> staging
 }
 
 .about-page p {
@@ -153,6 +162,10 @@ body {
 
   .menu-kuliner p {
     font-size: large;
+  }
+
+  .about-page img{
+    width: 45%;
   }
 }
 
@@ -201,5 +214,17 @@ body {
   .menu-kuliner p {
     margin-top: 0.4rem;
     font-size: 1.1em;
+  }
+
+.about-page h2 {
+  font-size: 1.8rem;
+}
+
+  .about-page p {
+  font-size: 1.5rem;
+  }
+
+  .about-page img {
+    width: 45vmax;
   }
 }
