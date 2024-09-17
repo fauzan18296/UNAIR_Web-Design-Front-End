@@ -122,13 +122,28 @@ body {
   font-size: 16px;
 }
 
-.about-page{
+.about-page {
   flex-direction: column;
   width: 100%;
+  min-height: 100vh;
 }
 
-.about-page .about-container {
-height: 100vh;
+.about-page img {
+  width: 40rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.about-page h2 {
+  letter-spacing: 3px;
+}
+
+.about-page p {
+  letter-spacing: 2px;
+}
+
+.about-page span {
+  color: coral;
 }
 
 @media screen and (max-width: 1366px) {
