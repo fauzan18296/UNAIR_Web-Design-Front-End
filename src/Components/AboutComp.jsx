@@ -1,12 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
-// import about from "../assets/IMG/img about/about1.webp";
+import about from "../assets/IMG/img-about/image1.webp";
 
 const AboutComp = () => {
   return (
     <div className="about-page d-flex justify-content-center align-items-center">
-      {/* <img src={about} alt="" /> */}
+      <img src={about} alt="" />
       <h2>
-        Kenyamanan anda<span className="title-section">kepuasan</span> kami
+        Kenyamanan anda <span>kepuasan</span> kami
       </h2>
       <Container className="about-container d-flex align-items-center">
         <Row className="d-flex align-items-center">

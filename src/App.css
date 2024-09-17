@@ -10,12 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-  width: 100%;
-  min-height: 100vh;
-}
-
 :root {
   --font-family-main: "Roboto";
 }
@@ -135,8 +129,9 @@ body {
 }
 
 .about-page img {
-  width: 50rem;
+  width: 40rem;
   margin-bottom: 2rem;
+  border-radius: 10px;
 }
 
 .about-page h2 {
@@ -147,8 +142,7 @@ body {
   letter-spacing: 2px;
 }
 
-.about-page > .title-section {
-  font-family: var(--font-family-main);
+.about-page span {
   color: coral;
 }
 
