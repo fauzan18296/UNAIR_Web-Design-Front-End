@@ -10,12 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-  width: 100%;
-  min-height: 100vh;
-}
-
 :root {
   --font-family-main: "Roboto";
 }
@@ -34,7 +28,7 @@ body {
   letter-spacing: 2px;
 }
 
-span {
+.navbar-nav span {
   font-family: "Pacifico";
   font-weight: 400;
   color: rgb(255, 127, 80);
@@ -91,7 +85,7 @@ span {
   align-items: center;
   flex-direction: column;
   background-color: #fff;
-  min-height: 100vh;    
+  min-height: 100vh;
   overflow-x: hidden;
   width: 100%;
 }
@@ -99,6 +93,11 @@ span {
 .menu-kuliner h2 {
   margin-top: 20px;
   letter-spacing: 2px;
+}
+
+.menu-kuliner span {
+  font-family: "Pacifico";
+  color: coral;
 }
 
 .menu-kuliner p {

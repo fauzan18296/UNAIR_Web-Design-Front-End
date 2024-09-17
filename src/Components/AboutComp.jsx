@@ -15,4 +15,4 @@ const AboutComp = () => {
   )
 }
 
-export default AboutComp
+export default AboutComp;
