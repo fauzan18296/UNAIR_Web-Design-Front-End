@@ -34,7 +34,7 @@ body {
   letter-spacing: 2px;
 }
 
-span {
+.navbar-nav span {
   font-family: "Pacifico";
   font-weight: 400;
   color: rgb(255, 127, 80);
@@ -91,7 +91,7 @@ span {
   align-items: center;
   flex-direction: column;
   background-color: #fff;
-  min-height: 100vh;    
+  min-height: 100vh;
   overflow-x: hidden;
   width: 100%;
 }
@@ -99,6 +99,11 @@ span {
 .menu-kuliner h2 {
   margin-top: 20px;
   letter-spacing: 2px;
+}
+
+.menu-kuliner span {
+  font-family: "Pacifico";
+  color: coral;
 }
 
 .menu-kuliner p {
@@ -123,13 +128,28 @@ span {
   font-size: 16px;
 }
 
-.about-page{
+.about-page {
   flex-direction: column;
   width: 100%;
+  min-height: 100vh;
 }
 
-.about-page .about-container {
-height: 100vh;
+.about-page img {
+  width: 50rem;
+  margin-bottom: 2rem;
+}
+
+.about-page h2 {
+  letter-spacing: 3px;
+}
+
+.about-page p {
+  letter-spacing: 2px;
+}
+
+.about-page > .title-section {
+  font-family: var(--font-family-main);
+  color: coral;
 }
 
 @media screen and (max-width: 1366px) {
