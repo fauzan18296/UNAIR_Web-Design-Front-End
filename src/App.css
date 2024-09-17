@@ -129,22 +129,13 @@ body {
 }
 
 .about-page img {
-<<<<<<< HEAD
-  width: 40rem;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-=======
   width: 48%;
   border-radius: 10%;
->>>>>>> staging
 }
 
 .about-page h2 {
   letter-spacing: 3px;
-<<<<<<< HEAD
-=======
   margin-top: 2rem;
->>>>>>> staging
 }
 
 .about-page p {
