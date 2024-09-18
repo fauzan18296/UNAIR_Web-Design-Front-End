@@ -6,3 +6,5 @@ berikut langkah-langkah untuk menjalankan programnya:
 2) npm install -g yarn
 3) yarn install
 4) yarn run dev atau yarn dev
+ini adalah URL website kami:
+https://restoran-asafy.vercel.app/
