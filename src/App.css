@@ -129,17 +129,17 @@ body {
 }
 
 .about-page img {
-  width: 48%;
+  width: 36vmax;
   border-radius: 10%;
 }
 
 .about-page h2 {
   letter-spacing: 3px;
-  margin-top: 2rem;
 }
 
 .about-page p {
   letter-spacing: 2px;
+  margin-top: 1.5rem;
 }
 
 .about-page span {
@@ -153,10 +153,6 @@ body {
 
   .menu-kuliner p {
     font-size: large;
-  }
-
-  .about-page img{
-    width: 45%;
   }
 }
 
@@ -207,15 +203,15 @@ body {
     font-size: 1.1em;
   }
 
-.about-page h2 {
-  font-size: 1.8rem;
-}
+  .about-page h2 {
+    font-size: 1.8rem;
+  }
 
   .about-page p {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .about-page img {
-    width: 45vmax;
+    width: 48vmax;
   }
 }

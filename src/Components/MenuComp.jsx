@@ -13,20 +13,20 @@ import drink5 from "../assets/IMG/images-menu/drink5.jpeg";
 import drink6 from "../assets/IMG/images-menu/drink6.jpeg";
 import { useEffect } from "react";
 import Aos from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import React from "react";
 
 const MenuComp = React.forwardRef((props, ref) => {
   useEffect(() => {
     Aos.init({
       duration: 2000,
-      delay: 20
-    })
+      delay: 20,
     });
+  });
 
   // data dummy image makanan
   const imagesFood = [
-   {
+    {
       id: 1,
       src: food1,
       name: "Matcha Pancake",
@@ -106,55 +106,52 @@ const MenuComp = React.forwardRef((props, ref) => {
 
   return (
     <>
-    {/* Section Menu Makanan */}
-    <div ref={ref} className="menu-kuliner" >
-      <h2 className="text-center fs-1">
-        Menu <span>Food</span>
+      {/* Section Menu Makanan */}
+      <div ref={ref} className="menu-kuliner">
+        <h2 className="text-center fs-1">
+          Menu <span>Makanan</span>
         </h2>
-        <div data-aos='fade-right'
-          data-aos-easing="ease-in-out-back"
-        >
-      <Container className="menu-container d-flex justify-content-center align-items-center">
-        <Row className="d-flex align-items-center justify-content-center row-cols-lg-3 row-cols-md-3 row-cols-sm-1 row-cols-2 my-2 mx-auto">
-          {/* Memunculkan dummy data gambar Food*/}
-          {imagesFood.map((imgFood) => (
-            <Col className="item-menu my-3 mx-auto" key={imgFood.id}>
-              <img src={imgFood.src} alt={`image${imgFood.id}`} />
-              <p className="menu-name  fw-semibold">{imgFood.name}</p>
-              <button className="btn-menu p-1 fw-semibold">
-                {imgFood.price}
-              </button>
-            </Col>
-          ))}
-        </Row>
+        <div data-aos="fade-right" data-aos-easing="ease-in-out-back">
+          <Container className="menu-container d-flex justify-content-center align-items-center">
+            <Row className="d-flex align-items-center justify-content-center row-cols-lg-3 row-cols-md-3 row-cols-sm-1 row-cols-2 my-2 mx-auto">
+              {/* Memunculkan dummy data gambar Food*/}
+              {imagesFood.map((imgFood) => (
+                <Col className="item-menu my-3 mx-auto" key={imgFood.id}>
+                  <img src={imgFood.src} alt={`image${imgFood.id}`} />
+                  <p className="menu-name  fw-semibold">{imgFood.name}</p>
+                  <button className="btn-menu p-1 fw-semibold">
+                    {imgFood.price}
+                  </button>
+                </Col>
+              ))}
+            </Row>
           </Container>
-          </div>
+        </div>
       </div>
 
       {/* Section Menu Minuman */}
       <div className="menu-kuliner">
-      <h2 className="text-center fs-1">
-        Menu <span>Drink</span>
+        <h2 className="text-center fs-1">
+          Menu <span>Minuman</span>
         </h2>
-        <div  data-aos='fade-left'
-          data-aos-easing="ease-in-out-back">
-      <Container className="menu-container d-flex justify-content-center align-items-center">
-        <Row className="d-flex align-items-center justify-content-center row-cols-lg-3 row-cols-md-3 row-cols-sm-1 row-cols-2 my-2 mx-auto">
-          {/* Memunculkan dummy data gambar Drink*/}
-          {imagesDrink.map((imgDrink) => (
-            <Col className="item-menu my-3 mx-auto" key={imgDrink.id}>
-              <img src={imgDrink.src} alt={`image${imgDrink.id}`} />
-              <p className="menu-name fw-semibold">{imgDrink.name}</p>
-              <button className="btn-menu p-1 fw-semibold">
-                {imgDrink.price}
-              </button>
-            </Col>
-          ))}
-        </Row>
+        <div data-aos="fade-left" data-aos-easing="ease-in-out-back">
+          <Container className="menu-container d-flex justify-content-center align-items-center">
+            <Row className="d-flex align-items-center justify-content-center row-cols-lg-3 row-cols-md-3 row-cols-sm-1 row-cols-2 my-2 mx-auto">
+              {/* Memunculkan dummy data gambar Drink*/}
+              {imagesDrink.map((imgDrink) => (
+                <Col className="item-menu my-3 mx-auto" key={imgDrink.id}>
+                  <img src={imgDrink.src} alt={`image${imgDrink.id}`} />
+                  <p className="menu-name fw-semibold">{imgDrink.name}</p>
+                  <button className="btn-menu p-1 fw-semibold">
+                    {imgDrink.price}
+                  </button>
+                </Col>
+              ))}
+            </Row>
           </Container>
-          </div>
+        </div>
       </div>
-      </>
+    </>
   );
-})
+});
 export default MenuComp;
