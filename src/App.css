@@ -124,19 +124,21 @@ body {
 
 .about-page {
   flex-direction: column;
+  position: relative;
   width: 100%;
   min-height: 100vh;
 }
 
 .about-page img {
-  width: 40rem;
-  margin-bottom: 2rem;
-  border-radius: 10px;
+  width: 40vmax;
+  bottom: 9rem;
+  transition: opacity  0.9s ease-in-out;
+  position: absolute;
+  border-radius: 10%;
 }
 
 .about-page h2 {
   letter-spacing: 3px;
-  margin-top: 2rem;
 }
 
 .about-page p {
@@ -205,6 +207,13 @@ body {
     font-size: 1.1em;
   }
 
+  .about-page{
+    display: block;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
   .about-page h2 {
     font-size: 1.8rem;
   }
@@ -214,6 +223,7 @@ body {
   }
 
   .about-page img {
-    width: 48vmax;
+    width: 35vmax;
+    top: 6rem;
   }
 }
