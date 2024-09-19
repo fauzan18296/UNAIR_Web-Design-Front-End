@@ -124,16 +124,12 @@ body {
 
 .about-page {
   flex-direction: column;
-  position: relative;
   width: 100%;
   min-height: 100vh;
 }
 
 .about-page img {
   width: 40vmax;
-  bottom: 9rem;
-  transition: opacity 0.9s ease-in-out;
-  position: absolute;
   border-radius: 10%;
 }
 
