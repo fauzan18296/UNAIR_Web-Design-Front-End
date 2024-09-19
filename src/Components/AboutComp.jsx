@@ -1,34 +1,23 @@
 import { Container, Row, Col } from "react-bootstrap";
 import about1 from "../assets/IMG/img-about/image1.webp";
-import about2 from "../assets/IMG/img-about/image2.webp";
-import { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const AboutComp = () => {
-  const [opacityValue, setOpacityValue] = useState(0)
   useEffect(() => {
-    let opacity = 0
-    const interval = setInterval(() => {
-      opacity += 0.1
-    setOpacityValue(opacity % 2)
-    }, 600)
-    return () => clearInterval(interval)
-  },[])
+    Aos.init({
+      duration: 2000,
+      delay: 20,
+      easing: "ease-in-out-back",
+    });
+  });
   return (
     <div className="about-page d-flex justify-content-center align-items-center">
       <Container fluid className="d-flex justify-content-center align-items-center">
         <Row className="d-flex justify-content-center align-items-center">
-          <Col
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginBottom: '10rem'
-            }}
-            xs={8} lg={5} className="mx-auto">
-          <img src={about1} alt="" fluid  style={{opacity: opacityValue}} />
-          <img src={about2} alt="" fluid  style={{opacity: opacityValue - 0.9}} />
-          </Col>
-          <Col className="about-content mx-auto mt-3">
+          <img data-aos="fade-right" src={about1} alt="" />
+          <Col data-aos="fade-left" className="mx-auto mt-3">
             <h2 className="text-center">
               Kenyamanan anda <span>kepuasan</span> kami
             </h2>
