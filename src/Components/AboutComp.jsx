@@ -14,7 +14,7 @@ const AboutComp = () => {
   });
   return (
     <div className="about-page d-flex justify-content-center align-items-center">
-      <Container fluid className="d-flex justify-content-center align-items-center">
+      <Container className="d-flex justify-content-center align-items-center">
         <Row className="d-flex justify-content-center align-items-center">
           <Col className="mx-auto mt-3">
             <img data-aos="fade-right" src={about1} alt="" />
