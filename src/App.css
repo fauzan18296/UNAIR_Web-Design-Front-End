@@ -147,6 +147,27 @@ body {
   color: coral;
 }
 
+.about-us {
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about-us h2 {
+  letter-spacing: 2px;
+}
+
+.about-us span {
+ color: coral;
+}
+
+.about-us img {
+  display: block;
+  border: solid 4px coral;
+  border-radius: 10px;
+  width: 25vmax;
+}
+
 @media screen and (max-width: 1366px) {
   html {
     font-size: large;
@@ -209,6 +230,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
 
   .about-page h2 {
@@ -222,5 +245,18 @@ body {
   .about-page img {
     width: 35vmax;
     top: 6rem;
+  }
+
+  .about-us {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-us img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
   }
 }
