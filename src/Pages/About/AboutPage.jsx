@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <NavbarComp />
-      <AboutComp/>
+      <AboutComp />
     </>
   )
 }
