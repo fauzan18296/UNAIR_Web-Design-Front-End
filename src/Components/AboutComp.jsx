@@ -5,9 +5,12 @@ import fauzan from "../assets/IMG/img-about/fauzan.webp"
 import yosafat from "../assets/IMG/img-about/yosafat.webp"
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { motion,useScroll, useTransform } from 'framer-motion'
+import { useEffect} from "react";
 
 const AboutComp = () => {
+  const { scrollYProgress } = useScroll()
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
   useEffect(() => {
     Aos.init({
       duration: 2000,
@@ -47,16 +50,22 @@ const AboutComp = () => {
         <Container className="d-flex align-items-center">
           <Row className="d-flex align-items-center row-cols-lg-3 row-cols-md-2 row-cols-sm-1 gx-5">
             <Col className="mx-auto mt-3 about-us-content">
-              <img src={abiyan} alt="" />
-                  <p><span>Hello!</span> Nama saya <span>Abiyan Samawi Alkindi</span> saya adalah seorang siswa dari <span>SMAN 11 Surabaya.</span></p>
+              <div>
+              <motion.img style={{scale}} src={abiyan} alt="" />
+                <p><span>Hello!</span> Nama saya <span>Abiyan Samawi Alkindi</span> saya adalah seorang siswa dari <span>SMAN 11 Surabaya</span>, dan saya adalah seorang <span>Web Developer</span></p>
+                </div>
             </Col>
             <Col className="mx-auto mt-3 about-us-content">
-              <img src={fauzan} alt="" />
+              <div>
+              <motion.img style={{scale}}  src={fauzan} alt="" />
                 <p><span>Hello!</span> Nama saya <span>Ahmad Fauzan</span> saya adalah seorang siswa dari <span>SMAN 11 Surabaya</span>, dan saya adalah seorang <span>Web Developer.</span></p>
+                </div>
             </Col>
             <Col className="mx-auto mt-3 about-us-content">
-              <img src={yosafat} alt="" />
-               <p><span>Hello!</span> nama saya <span>Yosafat Archie Rismaharjo Sarlan</span> saya adalah seorang siswa dari <span>SMAN 11 Surabaya</span>, saya adalah seorang <span>Web Developer.</span></p>
+              <div>
+              <motion.img style={{scale}}  src={yosafat} alt="" />
+                <p><span>Hello!</span> nama saya <span>Yosafat Archie Rismaharjo Sarlan</span> saya adalah seorang siswa dari <span>SMAN 11 Surabaya</span>, saya adalah seorang <span>Web Developer.</span></p>
+                </div>
             </Col>
           </Row>
         </Container>
