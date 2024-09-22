@@ -161,6 +161,7 @@ body {
 
 .about-us span {
  color: coral;
+  font-weight: 700;
 }
 
 .about-us img {
@@ -179,10 +180,6 @@ body {
   align-items: center;
   justify-content: center;
   margin: 1rem 0;
-}
-
-.about-us .about-us-content span {
-  font-weight: 700;
 }
 
 @media screen and (max-width: 1366px) {
