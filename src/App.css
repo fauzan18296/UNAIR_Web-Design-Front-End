@@ -265,8 +265,6 @@ body {
   .about-us {
     display: flex;
     align-items: center;
-    height: 100%;
-    width: 100%;
   }
 
   .about-us h2 {
