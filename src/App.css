@@ -126,7 +126,7 @@ body {
 .about-page {
   flex-direction: column;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
@@ -239,6 +239,10 @@ body {
   .menu-kuliner p {
     margin-top: 0.4rem;
     font-size: 1.1em;
+  }
+
+  .about-page{
+    overflow-x: hidden;
   }
 
   .about-page h2 {
