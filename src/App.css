@@ -246,7 +246,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: hidden;
   }
 
   .about-page h2 {
