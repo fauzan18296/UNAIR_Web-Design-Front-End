@@ -8,31 +8,13 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 
 const AboutComp = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
   useEffect(() => {
-    function handleResize() {
-      const isMediaMobile = window.innerWidth <= 768;
-      setIsMobile(isMediaMobile);
-    }
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    
     Aos.init({
       duration: 2000,
       delay: 20,
       easing: "ease-in-out-back",
     });
-   
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
   }, []);
-
-  useEffect(() => {
-    Aos.refreshHard();
-  },[isMobile])
 
   return (
     <>
@@ -40,8 +22,8 @@ const AboutComp = () => {
       <div className="about-page d-flex justify-content-center align-items-center">
         <Container className="d-flex justify-content-center align-items-center">
           <Row className="d-flex justify-content-center align-items-center">
-            <img key={isMobile ? 'mobile' : 'desktop'} data-aos={isMobile ? 'fade-down' : 'fade-right'} src={about1} alt="" />
-            <Col key={!isMobile ? 'mobile' : 'desktop'}  data-aos={isMobile ? 'fade-up' : 'fade-left'} className="mx-auto mt-3">
+            <img data-aos='fade-right' src={about1} alt="" />
+            <Col data-aos='fade-left' className="mx-auto mt-3">
               <h2 className="text-center">
                 Kenyamanan Anda <span>Kepuasan</span> Kami
               </h2>
