@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 const AboutComp = () => {
   const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 0.9]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
   useEffect(() => {
     Aos.init({
       duration: 2000,
@@ -54,8 +54,7 @@ const AboutComp = () => {
               <motion.img style={{ scale }} src={abiyan} alt="" />
               <p data-aos = 'fade-up'>
                 <span>Hello!</span> Nama saya <span>Abiyan Samawi Alkindi</span>{" "}
-                saya adalah seorang siswa dari <span>SMAN 11 Surabaya</span>,
-                dan saya adalah seorang <span>Web Developer</span>
+                saya adalah seorang siswa dari <span>SMAN 11 Surabaya,</span> dan saya adalah seorang <span>Web Developer.</span>
               </p>
               </Col>
             </div>
@@ -64,7 +63,7 @@ const AboutComp = () => {
               <motion.img style={{ scale }} src={fauzan} alt="" />
               <p data-aos = 'fade-up'>
                 <span>Hello!</span> Nama saya <span>Ahmad Fauzan</span> saya
-                adalah seorang siswa dari <span>SMAN 11 Surabaya</span>, dan
+                adalah seorang siswa dari <span>SMAN 11 Surabaya,</span> dan
                 saya adalah seorang <span>Web Developer.</span>
               </p>
               </Col>
@@ -73,9 +72,9 @@ const AboutComp = () => {
             <Col className="mx-auto mt-3 about-us-content">
               <motion.img style={{ scale }} src={yosafat} alt="" />
               <p data-aos = 'fade-up'>
-                <span>Hello!</span> nama saya{" "}
+                <span>Hello!</span> Nama saya{" "}
                 <span>Yosafat Archie Rismaharjo Sarlan</span> saya adalah
-                seorang siswa dari <span>SMAN 11 Surabaya</span>, saya adalah
+                seorang siswa dari <span>SMAN 11 Surabaya,</span> dan saya adalah
                 seorang <span>Web Developer.</span>
               </p>
               </Col>
