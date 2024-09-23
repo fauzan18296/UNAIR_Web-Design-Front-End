@@ -175,9 +175,10 @@ body {
 
 .about-us p {
   display: block;
-  text-align:justify;
+  text-align: center;
   margin-top: 1rem;
   font-size: 1rem;
+   hyphens: auto;
 }
 
 .about-us .about-us-content {
