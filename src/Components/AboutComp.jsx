@@ -14,7 +14,7 @@ const AboutComp = () => {
   useEffect(() => {
     Aos.init({
       duration: 2000,
-      delay: 20,
+      delay: 15,
       easing: "ease-in-out-back",
     });
   }, []);
@@ -49,31 +49,37 @@ const AboutComp = () => {
         </h2>
         <Container className="d-flex align-items-center justify-content-center">
           <Row className="d-flex align-items-center justify-content-center row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-5">
+            <div>
             <Col className="mx-auto mt-3 about-us-content">
               <motion.img style={{ scale }} src={abiyan} alt="" />
-              <p>
+              <p data-aos = 'fade-up'>
                 <span>Hello!</span> Nama saya <span>Abiyan Samawi Alkindi</span>{" "}
                 saya adalah seorang siswa dari <span>SMAN 11 Surabaya</span>,
                 dan saya adalah seorang <span>Web Developer</span>
               </p>
-            </Col>
+              </Col>
+            </div>
+            <div>
             <Col className="mx-auto mt-3 about-us-content">
               <motion.img style={{ scale }} src={fauzan} alt="" />
-              <p>
+              <p data-aos = 'fade-up'>
                 <span>Hello!</span> Nama saya <span>Ahmad Fauzan</span> saya
                 adalah seorang siswa dari <span>SMAN 11 Surabaya</span>, dan
                 saya adalah seorang <span>Web Developer.</span>
               </p>
-            </Col>
+              </Col>
+            </div>
+            <div>
             <Col className="mx-auto mt-3 about-us-content">
               <motion.img style={{ scale }} src={yosafat} alt="" />
-              <p>
+              <p data-aos = 'fade-up'>
                 <span>Hello!</span> nama saya{" "}
                 <span>Yosafat Archie Rismaharjo Sarlan</span> saya adalah
                 seorang siswa dari <span>SMAN 11 Surabaya</span>, saya adalah
                 seorang <span>Web Developer.</span>
               </p>
-            </Col>
+              </Col>
+              </div>
           </Row>
         </Container>
       </div>
