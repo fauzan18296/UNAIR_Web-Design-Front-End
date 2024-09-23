@@ -142,6 +142,7 @@ body {
 .about-page p {
   letter-spacing: 2px;
   line-height: 28px;
+  text-align:left;
   margin-top: 1.5rem;
 }
 
@@ -169,19 +170,15 @@ body {
 .about-us img {
   border: solid 4px coral;
   border-radius: 10px;
-  width: 30vmax;
+  width: 25vmax;
 }
 
 .about-us p {
-  line-height: 25px;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
   font-size: 1rem;
-}
-
-.about-us .about-us-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+   hyphens: auto;
 }
 
 .about-us .about-us-content {
