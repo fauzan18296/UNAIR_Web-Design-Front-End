@@ -142,7 +142,7 @@ body {
 .about-page p {
   letter-spacing: 2px;
   line-height: 28px;
-  text-align:left;
+  text-align: left;
   margin-top: 1.5rem;
 }
 
@@ -170,22 +170,22 @@ body {
 .about-us img {
   border: solid 4px coral;
   border-radius: 10px;
-  width: 25vmax;
+  width: 20vmax;
 }
 
-.about-us p {
+.about-us .about-us-content p {
   display: block;
   text-align: center;
   margin-top: 1rem;
   font-size: 1rem;
-   hyphens: auto;
+  hyphens: auto;
 }
 
 .about-us .about-us-content {
   flex-direction: column;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
   html {
     font-size: large;
   }
