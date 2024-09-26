@@ -1,6 +1,6 @@
 # Lomba Web Design UNAIR bagian Front-end
 tampilan awal website:
-![alt text](https://i.imgur.com/NQDpeG1.jpeg?raw=true)
+![alt text](https://i.imgur.com/bDUbbXu.jpeg)
 berikut langkah-langkah untuk menjalankan programnya:
 1) git clone https://github.com/fauzan18296/UNAIR_Web-Design-Front-End.git atau git clone git@github.com:fauzan18296/UNAIR_Web-Design-Front-End.git
 2) npm install -g yarn
