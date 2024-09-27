@@ -9,9 +9,9 @@ const NavbarComp = () => {
           </Navbar.Brand>
          <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className='ms-auto'>
-            <Nav.Link href="/about" className='text-black fs-5 fw-semibold'>About</Nav.Link>
-             <Nav.Link href="/category" className='text-black fs-5 fw-semibold'>Categories</Nav.Link>
+          <Nav className='ms-auto fw-bold   fw-semibold fs-5'>
+            <Nav.Link href="/about">About</Nav.Link>
+             <Nav.Link href="/category">Categories</Nav.Link>
         </Nav>
           </Navbar.Collapse>
         </Container>
