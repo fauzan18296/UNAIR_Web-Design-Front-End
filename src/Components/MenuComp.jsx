@@ -75,7 +75,7 @@ const MenuComp = React.forwardRef((props, ref) => {
     {
       id: 2,
       src: drink2,
-      name: "Apple Coctail",
+      name: "Apple Cocktail",
       price: "Rp 25.000",
     },
     {
@@ -154,4 +154,5 @@ const MenuComp = React.forwardRef((props, ref) => {
     </>
   );
 });
+MenuComp.displayName = 'MenuComp';
 export default MenuComp;

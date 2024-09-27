@@ -19,8 +19,8 @@ const HeroComp = ({ scrollPageRef }) => {
           {
             maxWidth: "100vw",
           }}>
-          <Col className='text-center'>
-            <p data-aos='fade-down' className='hero-text fs-3 fw-semibold'>Bagi Anda pencinta <span className='kuliner-text'>kuliner</span>, kami menawarkan beragam pilihan menu yang menggugah selera.</p>
+          <Col>
+            <p data-aos='fade-down' className='hero-text'>Bagi Anda pencinta <span>kuliner</span>, kami menawarkan beragam pilihan menu yang menggugah selera.</p>
               <button data-aos='fade-up' onClick={scrollPageRef} className='hero-btn mx-auto px-3 fs-5 fw-semibold'>Lihat Menu &dArr;</button>
           </Col>
         </Row>
