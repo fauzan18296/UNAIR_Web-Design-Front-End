@@ -10,6 +10,10 @@ body {
   box-sizing: border-box;
 }
 
+body {
+    font-family: var(--font-family-main);
+}
+
 :root {
   --font-family-main: "Roboto";
 }
@@ -61,11 +65,13 @@ body {
 .hero-text {
   display: inline-block;
   padding: 0.2rem 0;
+  font-weight: 500;
+  font-size: 1.8rem;
   text-align: justify;
   text-shadow: 1px 1px 1px rgba(2, 2, 2, 0.5);
 }
 
-.hero-section .kuliner-text {
+.hero-section span {
   font-family: var(--font-family-mains);
   color: coral;
   font-weight: 700;
@@ -111,7 +117,6 @@ body {
 
 .menu-kuliner img {
   width: 80%;
-  object-fit: cover;
   height: auto;
   border-radius: 10px;
 }
@@ -185,9 +190,48 @@ body {
   flex-direction: column;
 }
 
+.category-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.category {
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 4.5rem auto;
+  width: 100%;
+}
+
+.category-section span {
+  color: coral;
+  font-family: "Pacifico";
+}
+
+.category-section img {
+  width: 18vmax;
+  border-radius: 10px;
+}
+
+.category-section h3 {
+  color: coral;
+}
+
+.category-section p{
+  font-size: 1rem;
+  text-align: start;
+  hyphens: auto;
+}
+
 @media screen and (max-width: 1400px) {
   html {
     font-size: large;
+  }
+
+  .hero-section .hero-text {
+    text-align: justify;
   }
 
   .menu-kuliner p {
